@@ -1466,28 +1466,6 @@ button:focus {
 /*=============================================
 = TEAM
 =============================================*/
-/*----------  TEAM - 3  ----------*/
-.teambox-03 {
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding-top: 50px;
-  padding: 40px;
-  margin-top: 80px;
-}
-.teambox-03 .img {
-  border: 10px solid #fff;
-  margin-top: -120px;
-  border-radius: 100%;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
-}
-/*----------  TEAM - 3  ----------*/
-.teambox-04 {
-  padding: 40px;
-  text-align: left;
-}
-.teambox-04 .img {
-  border: 10px solid #fff;
-  border-radius: 100%;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
 /*=====  End of TEAM  ======*/
 /*=============================================
@@ -1497,93 +1475,6 @@ button:focus {
   display: inline-flex;
 }
 /*=====  End of FILTER  ======*/
-/*=============================================
-= GRID PORTFOLIO
-=============================================*/
-/*----------  GRID STRUCTURE  ----------*/
-.portfolio-row {
-  box-sizing: border-box;
-  display: flex;
-  flex: 0 1 auto;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.portfolio-row > [class*="portfolio-col"] {
-  width: 100%;
-}
-.grid-01 > .portfolio-col {
-  flex-basis: 100%;
-  max-width: 100%;
-}
-.grid-02 > .portfolio-col {
-  flex-basis: 50%;
-  max-width: 50%;
-}
-.grid-03 > .portfolio-col {
-  flex-basis: 33.33333333333333%;
-  max-width: 33.33333333333333%;
-}
-.grid-04 > .portfolio-col {
-  flex-basis: 25%;
-  max-width: 25%;
-}
-.grid-05 > .portfolio-col {
-  flex-basis: 20%;
-  max-width: 20%;
-}
-.grid-06 > .portfolio-col {
-  flex-basis: 16.66666666666667%;
-  max-width: 16.66666666666667%;
-}
-.grid-07 > .portfolio-col {
-  flex-basis: 14.28571428571429%;
-  max-width: 14.28571428571429%;
-}
-.grid-08 > .portfolio-col {
-  flex-basis: 12.5%;
-  max-width: 12.5%;
-}
-.grid-09 > .portfolio-col {
-  flex-basis: 11.11111111111111%;
-  max-width: 11.11111111111111%;
-}
-.grid-10 > .portfolio-col {
-  flex-basis: 10%;
-  max-width: 10%;
-}
-.grid-11 > .portfolio-col {
-  flex-basis: 9.090909090909091%;
-  max-width: 9.090909090909091%;
-}
-.grid-12 > .portfolio-col {
-  flex-basis: 8.333333333333333%;
-  max-width: 8.333333333333333%;
-}
-/*----------  POPUP ZOOM IMAGE EFFECT  ----------*/
-.mfp-zoom-in .mfp-with-anim {
-  opacity: 0;
-  transition: all 0.3s ease-in-out;
-  transform: scale(0.8);
-}
-.mfp-zoom-in.mfp-bg {
-  opacity: 0;
-  transition: all 0.3s ease-out;
-}
-.mfp-zoom-in.mfp-ready .mfp-with-anim {
-  opacity: 1;
-  transform: scale(1);
-}
-.mfp-zoom-in.mfp-ready.mfp-bg {
-  opacity: 0.8;
-}
-.mfp-zoom-in.mfp-removing .mfp-with-anim {
-  transform: scale(0.8);
-  opacity: 0;
-}
-.mfp-zoom-in.mfp-removing.mfp-bg {
-  opacity: 0;
-}
-/*=====  End of GRID PORTFOLIO  ======*/
 /*=============================================
 = MASONRY GRID
 =============================================*/
