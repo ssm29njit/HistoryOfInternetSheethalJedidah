@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <!-- Basic page needs-->
-    <title>Virtualization</title>
+    <title>Containerization</title>
     <meta charset="UTF-8"/>
     <meta name="author" content=""/>
     <meta name="description" content=""/>
@@ -60,8 +60,8 @@
                     <a class="dropdown-item" href="./TheInventionoftheInternet.html">The Invention of the Internet</a>
                     <a class="dropdown-item" href="./BrowserWars.html">Browser Wars</a>
                     <a class="dropdown-item" href="./Dotcombubble.html">Dot com bubble</a>
-                    <a class="dropdown-item" href="./InternetSearch.html">Internet Search</a>
-                    <a class="dropdown-item active" href="#">People</a>
+                    <a class="dropdown-item active" href="#">Internet Search</a>
+                    <a class="dropdown-item" href="./InternetPeople.html">People</a>
                 </div>
             </li>
         </ul>
@@ -74,63 +74,55 @@
             <!-- Article-->
             <article class="apo-entry apo-single">
                 <!-- Article Media-->
-                <div class="apo-entry-media"><img src="images/pexels-photo-2777898.jpeg" alt=""/></div>
+                <div class="apo-entry-media"><img src="images/cntnrz.jpeg" alt=""/></div>
                 <!-- End of Article Media-->
                 <!-- Article Content-->
                 <div class="apo-entry-content-wrap">
                     <header class="apo-entry-header">
-                        <h2 class="apo-entry-title">People</h2>
+                        <h2 class="apo-entry-title">Containerization</h2>
                         <ul class="apo-entry-meta">
                             <li>Author: <a href="#">Sheethal</a></li>
-                            <li>Published in: <a href="#">17 October, 2020</a></li>
-                            <li>Categories: <a href="#">VM</a>, <a href="#">Internet</a></li>
+                            <li>Published in: <a href="#">18 October 2020</a></li>
+                            <li>Categories: <a href="#">Containers</a>, <a href="#">Application</a></li>
                         </ul>
                     </header>
                     <div class="apo-entry-content">
-                        <p>Virtualization is all about creating a virtual, instead of actual, version of computer
-                            hardware platforms, storage devices, and computer network resources in the computing world.
-                            It requires division of hardware partitions and distributing among the virtual machines
-                            present. This is a resource intensive process. This method requires logical division of
-                            system resources provided by mainframe computers between applications.  .</p>
-                        <p>Hardware virtualization or platform virtualization refers to the creation of a virtual
-                            machine that acts like a real computer with operating system. Hardware resources are
-                            separated from software executed on these virtual machines. An example would be, a computer
-                            might have Microsoft Windows base OS on top of underlying hardware, and the same computer
-                            may virtually host Ubuntu Linux operating system, where Ubuntu software can be run on the
-                            virtual machine.</p>
-                        <div class="wp-caption"><img src="images/virtual-app.jpg
-" alt=""/></div>
-                        <p>There are two types of virtualization. One, full virtualization; it is a complete simulation
-                            of the actual hardware to allow software environments, including guest operating system and
-                            its apps, to run unmodified. Paravirtualization refers to a situation here guest apps are
-                            executed in their own isolated domains, as if they are running on a separate system, but a
-                            hardware environment is not simulated. Guest programs are required to be modified with
-                            specifics to run in this environment.  .</p>
-                        <p>The main common goal of virtualization is to centralize administrative tasks while improving
-                            scalability and overall hardware-resource utilization. Parallelization of several operating
-                            systems on a single CPU is the main benefit of Virtualization. Parallelism helps reduce
-                            overhead costs and differs from multitasking, involving running of several programs on the
-                            same OS. With Virtualization, enterprises can better manage updates and rapid changes to the
-                            operating system and applications without disruption to the user.</p>
-                        <p>Saved state of virtual machine is called a snapshot, of an exact point of storage. A snapshot
-                            enables the virtual machine’s state at the time of the snapshot to be restored later,
-                            effectively undoing any changes that occurred afterwards. This is essentially a backup
-                            technique, for example, prior to performing a risky operation. Snapshot benefits include
-                            the ability to port it over to another host machine with its own hypervisor. . </p>
-                        <p>If VM temporarily stops, one can snapshot, move to another host, and then resume on the
-                            new host. This method is called migration.
-                            On the other hand, failover,allows VM to continue operations if the host fails. Generally
-                            it occurs if the migration has stopped working.
-                            .</p>
-                        <div class="wp-caption"><img src="images/webdepth.jpeg" alt=""/></div>
-                        <p>Nested Virtualization enables running virtual machine within another VM. As a concept, it is
-                            extendable to an arbitrary depth. It allows running one or multiple hypervisors inside
-                            another hypervisor. The way nested virtualization can be implemented on a particular
-                            computer architecture depends on supported hardware-assisted virtualization capabilities.
-                            In case a device does not support hardware resources to enable nested virtualization,
-                            software techniques are required to enable it.  </p>
-                        <p> Virtual machines running proprietary operating systems require licensing, regardless of the
-                            host machine's operating system.</p>
+                        <p>In traditional software development, code developed in one computing environment often runs
+                            with bugs and errors when deployed in another environment..</p>
+                        <p>Software developers solve this problem by running software in ‘containers’ in the cloud.
+                            Containerization involves bundling an application together with all of its related
+                            configuration files, libraries and dependencies required for it to run in an efficient and
+                            bug-free way across different computing environments.</p>
+                        <div class="wp-caption"><img src="images/ship.jpeg" alt=""/></div>
+                        <p>The most popular containerization ecosystems are Docker and Kubernetes.
+                            Containers are an abstraction of the application layer (meaning that each container
+                            simulates a different software application). Though each container runs isolated processes,
+                            multiple containers share a common Operating System.
+                        </p>
+                        <p>Running software in containerized environments generally uses less space and memory than
+                            running software within different VMs.</p>
+                        <p>Application containerization is a positive development for distributed applications and
+                            micro-services because each container operates independently of the others. Because each
+                            container operates independently of others it helps prevent interdependencies and also
+                            safeguards from a single point of failure. Each application or micro-service communicates
+                            with the others through their APIs. The container virtualization layer is also extremely
+                            flexible and can scale up micro-services to meet rising demand for an application component
+                            and distribute the load.</p>
+                        <p>Containerization presents two security challenges. First, since containerized applications
+                            share a common Operating System, security threats to the Operating System can affect the
+                            whole system. Second, and related, security scanners in containerized environments generally
+                            protect the Operating System but not the application containers, leaving the latter
+                            vulnerable. At the same time, containerization also bolsters security since it isolates
+                            application containers to a significant degree. </p>
+                        <div class="wp-caption"><img src="images/container.png" alt=""/></div>
+                        <p>Containerization is a major trend in software development and is its adoption will likely
+                            grow in both magnitude and speed. Large players like Google and IBM are making big bets on
+                            containerization. Additionally, an enormous startup ecosystem is forming to enable
+                            containerization. Containerization’s proponents believe that it allows developers to create
+                            and deploy applications faster and more securely than traditional methods. While
+                            containerization is expensive, its costs are expected to fall significantly as
+                            containerization environments develop and mature. Containerization is thus likely to
+                            become the new norm for software development. </p>
                     </div>
                     <footer class="apo-entry-footer">
                         <div class="row apo-table-row-md">
@@ -142,7 +134,7 @@
                                                 <li><a href="./TheInventionoftheInternet.html">Invention</a></li>
                                                 <li><a href="./BrowserWars.html">Wars</a></li>
                                                 <li><a href="./Dotcombubble.html">Dot Com</a></li>
-                                                <li><a href="./InternetSearch.html">Search</a></li>
+                                                <li><a href="./InternetPeople.html">People</a></li>
                                             </ul>
                                         </div>
                                     </div>
